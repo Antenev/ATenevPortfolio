@@ -7,7 +7,9 @@
   "scripts": {
     "start": "parcel",
     "build": "parcel build",
-    "gh-pages-build": "parcel build --public-url ."
+    "gh-pages-build": "parcel build --public-url .",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -19,9 +21,10 @@
   "bugs": {
     "url": "https://github.com/cobidev/simplefolio/issues"
   },
-  "homepage": "https://github.com/cobidev/simplefolio#readme",
+  "homepage": "https://antenev.github.io/ATenevPortfolio",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.7.0",
+    "gh-pages": "^6.3.0",
     "parcel": "^2.7.0",
     "prettier": "^2.7.1"
   },
@@ -32,4 +35,5 @@
     "popper.js": "^1.16.1",
     "vanilla-tilt": "^1.7.3"
   }
+  
 }
